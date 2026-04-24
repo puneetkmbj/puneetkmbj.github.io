@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "A note on scenario convergence",
+    "section": "",
+    "text": "Exploring how GCAM scenarios diverge under different policy assumptions.\n\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# placeholder data — replace with actual GCAM output\nscenarios &lt;- expand.grid(\n  year = 2020:2050,\n  scenario = c(\"Reference\", \"NDC\", \"Net-zero 2060\")\n) |&gt;\n  mutate(emissions = case_when(\n    scenario == \"Reference\" ~ 10 + 0.1 * (year - 2020),\n    scenario == \"NDC\"       ~ 10 - 0.05 * (year - 2020),\n    scenario == \"Net-zero 2060\" ~ 10 - 0.25 * (year - 2020)\n  ))\n\nggplot(scenarios, aes(year, emissions, color = scenario)) +\n  geom_line(linewidth = 1.1) +\n  labs(x = NULL, y = \"GtCO₂/yr\", color = NULL) +\n  theme_minimal(base_size = 13)\n\n\n\n\n\n\n\nFigure 1: Emissions pathways under three policy scenarios"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’ve spent the last decade working on energy transition in two of the most consequential places for global decarbonization: India and Saudi Arabia. The questions that occupy me sit between three domains that don’t always talk to each other — quantitative modeling of energy systems, applied policy analysis, and the strategic calculus of how governments and industry actually make decisions about emerging technologies.\nMy current work at KAPSARC focuses on Saudi Arabia’s transition strategy, with particular attention to hydrogen and CCUS ecosystems, the market structures needed to move from announcements to bankable projects, and how petrostate economies navigate decarbonization without conceding on energy security or economic diversification. Earlier work at CEEW and Brookings India was grounded in the equally difficult problem of how a large, coal-dependent, electricity-constrained economy builds a transition that is technically credible, politically viable, and aligned with development priorities.\nMethodologically, I work primarily with integrated assessment frameworks (GCAM and related tools), techno-economic assessment, and scenario analysis. I’m a heavy user of R and am expanding into Python and other systems modeling languages. I care about models that are transparent, reproducible, and honest about what they can and cannot tell us — which is often less than policy conversations assume.\nOutside of formal research, I engage through COP, T20, IAMC, and bilateral dialogue processes, and I mentor junior researchers working on energy and climate policy."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I’ve spent the last decade working on energy transition in two of the most consequential places for global decarbonization: India and Saudi Arabia. The questions that occupy me sit between three domains that don’t always talk to each other — quantitative modeling of energy systems, applied policy analysis, and the strategic calculus of how governments and industry actually make decisions about emerging technologies.\nMy current work at KAPSARC focuses on Saudi Arabia’s transition strategy, with particular attention to hydrogen and CCUS ecosystems, the market structures needed to move from announcements to bankable projects, and how petrostate economies navigate decarbonization without conceding on energy security or economic diversification. Earlier work at CEEW and Brookings India was grounded in the equally difficult problem of how a large, coal-dependent, electricity-constrained economy builds a transition that is technically credible, politically viable, and aligned with development priorities.\nMethodologically, I work primarily with integrated assessment frameworks (GCAM and related tools), techno-economic assessment, and scenario analysis. I’m a heavy user of R and am expanding into Python and other systems modeling languages. I care about models that are transparent, reproducible, and honest about what they can and cannot tell us — which is often less than policy conversations assume.\nOutside of formal research, I engage through COP, T20, IAMC, and bilateral dialogue processes, and I mentor junior researchers working on energy and climate policy."
+  },
+  {
+    "objectID": "about.html#current-position",
+    "href": "about.html#current-position",
+    "title": "About",
+    "section": "Current position",
+    "text": "Current position\nResearch Lead, King Abdullah Petroleum Studies and Research Center (KAPSARC), Riyadh — 2022 to present"
+  },
+  {
+    "objectID": "about.html#previous-positions",
+    "href": "about.html#previous-positions",
+    "title": "About",
+    "section": "Previous positions",
+    "text": "Previous positions\nProgramme Associate, Council on Energy, Environment and Water (CEEW), New Delhi — 2020–2022\nResearch Analyst, Brookings India / CSEP, New Delhi — 2017–2020\nLecturer, Lovely Professional University — 2012–2013"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nM.Tech, Renewable Energy Engineering & Management — TERI School of Advanced Studies, 2016\nB.Tech, Mechanical Engineering — Maharishi Dayanand University, 2011"
+  },
+  {
+    "objectID": "about.html#selected-training",
+    "href": "about.html#selected-training",
+    "title": "About",
+    "section": "Selected training",
+    "text": "Selected training\n\nClimate Change, Tinbergen Institute (2024)\nMacroeconomics and Climate Change, CEMFI (2023)\nEnergy Subsidy Reform, IMF (2017)"
+  },
+  {
+    "objectID": "about.html#convenings-and-dialogues",
+    "href": "about.html#convenings-and-dialogues",
+    "title": "About",
+    "section": "Convenings and dialogues",
+    "text": "Convenings and dialogues\nCOP27, COP28, IAMC, Saudi–German Energy Dialogue, T20"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About",
+    "section": "Languages",
+    "text": "Languages\nEnglish (fluent) · Hindi (native) · Punjabi (native) · Arabic (basic)"
+  },
+  {
+    "objectID": "posts/EV_Charging/saudi_bev_charging_investment.html",
+    "href": "posts/EV_Charging/saudi_bev_charging_investment.html",
+    "title": "Powering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries",
+    "section": "",
+    "text": "Saudi Arabia is undergoing a transformative shift in its road transport sector, aligning with the ambitious goals of Vision 2030 on economic diversification, environmental sustainability, and quality of life. As the Kingdom commits to a low-emission future, the widespread adoption of electric mobility is emerging as a central pillar.\nA recent discussion paper, Scaling Up BEV Charging and Battery Capacity in Saudi Arabia, provides the first integrated estimate of the capital required to build out the necessary infrastructure — specifically Direct Current Fast Charging (DCFC) networks and domestic battery manufacturing — through 2060. The findings underscore that realizing the Kingdom’s EV ambitions will require sustained and well-coordinated investments."
+  },
+  {
+    "objectID": "posts/EV_Charging/saudi_bev_charging_investment.html#two-pathways-to-electrification",
+    "href": "posts/EV_Charging/saudi_bev_charging_investment.html#two-pathways-to-electrification",
+    "title": "Powering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries",
+    "section": "Two pathways to electrification",
+    "text": "Two pathways to electrification\nThe study uses scenario-based modeling to project passenger Battery Electric Vehicle (BEV) uptake under two long-term adoption pathways: Ambition and Ambition_plus. These scenarios reflect different levels of policy intensity and incorporate factors such as climate-adjusted battery degradation and technology cost reductions derived from learning curves.\n\n\n\n\n\n\n\n\nMetric\nAmbition (Moderate)\nAmbition_plus (Proactive)\n\n\n\n\nBEVs on road, 2060\n~4 million\n~10 million\n\n\nCumulative battery demand\n334 GWh\n853 GWh\n\n\nDCFC points required by 2060\n~300,000\n~820,000\n\n\n\nThe Ambition_plus scenario represents a more stringent policy framework: accelerated adoption, removal of institutional barriers for light-duty vehicles by 2035, and an Internal Combustion Engine (ICE) scrappage policy starting in 2030."
+  },
+  {
+    "objectID": "posts/EV_Charging/saudi_bev_charging_investment.html#the-charging-challenge-building-the-dcfc-backbone",
+    "href": "posts/EV_Charging/saudi_bev_charging_investment.html#the-charging-challenge-building-the-dcfc-backbone",
+    "title": "Powering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries",
+    "section": "The charging challenge: building the DCFC backbone",
+    "text": "The charging challenge: building the DCFC backbone\nA robust public charging infrastructure is essential to support the transition, mitigating risks such as range anxiety and congestion. This paper focuses on DCFC — high-throughput fast charging crucial for intercity corridors and logistics hubs requiring rapid turnaround.\nIn the Saudi context, persistent high temperatures reinforce this choice. Brief, high-power sessions limit heat exposure for batteries and users, making DCFC preferable to prolonged Level 1 or Level 2 charging.\nCumulative investment needs between 2026 and 2060 are substantial:\n\n\n\n\n\n\n\n\n\nScenario\nDCFC points\nCumulative NPV (SAR)\nAnnualized (SAR/yr)\n\n\n\n\nAmbition\n300,000\n14–18 billion\n0.40–0.52 billion\n\n\nAmbition_plus\n820,000\n38–49 billion\n1.08–1.40 billion\n\n\n\nThese ranges reflect uncertainty in installation expenses and hardware prices over the study period."
+  },
+  {
+    "objectID": "posts/EV_Charging/saudi_bev_charging_investment.html#the-manufacturing-opportunity-localizing-battery-production",
+    "href": "posts/EV_Charging/saudi_bev_charging_investment.html#the-manufacturing-opportunity-localizing-battery-production",
+    "title": "Powering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries",
+    "section": "The manufacturing opportunity: localizing battery production",
+    "text": "The manufacturing opportunity: localizing battery production\nThe transition generates substantial battery demand not just from new vehicle sales but also from replacement needs — vehicles typically outlive their batteries. Saudi Arabia currently lacks scaled manufacturing capacity to meet this demand, meaning the transition initially depends heavily on imports.\nThe Kingdom is actively building capacity, with initiatives such as the Lucid plant in King Abdullah Economic City (KAEC) and the domestic EV brand Ceer anchoring local production. Domestic battery manufacturing matters because cells and packs dominate EV costs: capturing this share of the value chain allows the Kingdom to retain more of the transition’s economic benefits, with potential spillovers to stationary storage exports.\nTo meet cumulative demand of up to 853 GWh by 2060 under Ambition_plus, the required capital expenditure for domestic lithium-ion battery manufacturing is significant. The study evaluated two localization pathways:\n\n\n\n\n\n\n\n\n\n\nScenario\nDemand\n50% domestic (NPV, SAR)\n100% domestic (NPV, SAR)\nAnnualized (SAR/yr)\n\n\n\n\nAmbition\n334 GWh\n18 billion\n36 billion\n0.6–1.15 billion\n\n\nAmbition_plus\n853 GWh\n46 billion\n91 billion\n1.5–3.0 billion\n\n\n\nCrucially, alignment with the Kingdom’s growing renewable-rich grid improves unit economics and lowers embedded emissions for battery production, while upstream metals investments can shorten supply chains."
+  },
+  {
+    "objectID": "posts/EV_Charging/saudi_bev_charging_investment.html#a-strategic-investment-in-non-oil-gdp",
+    "href": "posts/EV_Charging/saudi_bev_charging_investment.html#a-strategic-investment-in-non-oil-gdp",
+    "title": "Powering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries",
+    "section": "A strategic investment in non-oil GDP",
+    "text": "A strategic investment in non-oil GDP\nAchieving high BEV penetration requires phasing investments: accelerating in the 2030s, moderating in the 2040s, and shifting toward renewal after 2050 — to avoid overbuilding while consistently meeting demand.\nStrategic investment in this comprehensive BEV ecosystem — vehicles, batteries, and a nationwide DCFC backbone — is not only an environmental measure. It directly supports Vision 2030’s objective of increasing the non-oil share of GDP by catalyzing new, technology-driven value chains.\nLarge-scale electrification of Saudi Arabia’s passenger transport sector is both economically viable and operationally feasible — provided that policymakers and investors commit to the quantitative roadmap the analysis lays out.\n\nThis post summarizes findings from ongoing work at KAPSARC. For the underlying methodology and full modeling assumptions, see the discussion paper."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I’m open to conversations about research collaboration, advisory engagements on energy transition strategy, speaking invitations, and media inquiries on hydrogen, CCUS, integrated assessment modeling, and transition policy in India and the GCC.\nFor the fastest response, email is best. I aim to reply within a week, though travel and convening cycles occasionally slow that down."
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in touch",
+    "text": "Get in touch\nEmail — puneetkamboj@pm.me\nBased in — Riyadh, Saudi Arabia"
+  },
+  {
+    "objectID": "contact.html#elsewhere",
+    "href": "contact.html#elsewhere",
+    "title": "Contact",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\nLinkedIn\nGoogle Scholar (add your profile link)\nORCID (add your ORCID link)\nGitHub (add your GitHub link once set up)"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research examines the strategic, technical, and market dimensions of energy transition in emerging and oil-producing economies. Three themes organize most of the work: (i) decarbonization pathways and scenario analysis, typically using integrated assessment models; (ii) the ecosystem conditions — policy, regulation, market design — needed for emerging clean energy technologies such as hydrogen and CCUS to move from strategy to deployment; and (iii) the political economy of transition in coal-dependent and hydrocarbon-exporting contexts.\nWhere available, links point to the journal version, a preprint, or the report page."
+  },
+  {
+    "objectID": "research.html#peer-reviewed-journal-articles",
+    "href": "research.html#peer-reviewed-journal-articles",
+    "title": "Research",
+    "section": "Peer-reviewed journal articles",
+    "text": "Peer-reviewed journal articles\nKamboj, P., Bhatt, Y., Xu, X., Alswaina, F., Shetty, P. K., Arora, A., & Hejazi, M. (2026). Pathways to Decarbonizing Land Transport in Saudi Arabia: an integrated assessment of technologies and policy interventions. Energy and Climate Change, 100245.\nIlyas, A., Kamboj, P., Alswaina, F., Shetty, P. K., Hejazi, M., & Wada, Y. Long-term impacts of climate change on electricity demand and household expenditure in Saudi Arabia. SSRN Working Paper, 6328188.\nApeaning, R., Kamboj, P., Hejazi, M., Qiu, Y., Kyle, P., & Iyer, G. (2025). Assessing the impact of energy transition initiatives on the policy cost of Saudi Arabia’s net-zero ambition. Energy and Climate Change, 6, 100184.\nApeaning, R., Kamboj, P., & Hejazi, M. I. (2025). Bridging the divide: How unequal carbon dioxide removal deployment threatens climate equity and global mitigation feasibility. Sustainable Production and Consumption.\nHunt, J. D., Odeh, N., Hejazi, M., Kamboj, P., Osipov, S., & Wada, Y. (2025). The potential role of seasonal pumped hydropower storage in decarbonizing the power sector in Saudi Arabia. Renewable and Sustainable Energy Reviews, 211, 115361.\nKamboj, P., Hejazi, M., Qiu, Y., Kyle, P., & Iyer, G. (2024). The path to 2060: Saudi Arabia’s long-term pathway for GHG emission reduction. Energy Strategy Reviews, 55, 101537.\nQiu, Y., Iyer, G., Fuhrman, J., Hejazi, M., Kamboj, P., & Kyle, P. (2024). The role and deployment timing of direct air capture in Saudi Arabia’s net-zero transition. Environmental Research Letters, 19(6), 064042.\nSengupta, S., Adams, P. J., Deetjen, T. A., Kamboj, P., D’Souza, S., Tongia, R., & Azevedo, I. M. L. (2022). Subnational implications from climate and air pollution policies in India’s electricity sector. Science, 378(6620), eabh1484."
+  },
+  {
+    "objectID": "research.html#working-papers-and-reports",
+    "href": "research.html#working-papers-and-reports",
+    "title": "Research",
+    "section": "Working papers and reports",
+    "text": "Working papers and reports\nApeaning, R. W., Kamboj, P., Moya, D., Qiu, Y., Graham, N., Kyle, P., Iyer, G., & Hejazi, M. (2025). Differentiating Upstream Crude Oil Carbon Intensities in a Net-Zero World. KAPSARC Discussion Paper.\nBhatt, Y., & Kamboj, P. (2025). Scaling Up BEV Charging and Battery Capacity in Saudi Arabia. KAPSARC Discussion Paper.\nKamboj, P., Apeanig, R., & Hejazi, M. (2025). Who should reach Net-Zero first? A systematic exploration of Fair Climate policy. KAPSARC Discussion Paper.\nBhatt, Y., Kamboj, P., Arora, A., & Hejazi, M. (2025). Decarbonizing land-based passenger transport in Saudi Arabia. KAPSARC Discussion Paper.\nXu, X., Kamboj, P., Almutairi, S., Gertin, T., Arora, A., & Hejazi, M. (2025). Decarbonizing Road Freight Transportation in Saudi Arabia. KAPSARC Discussion Paper.\nApeaning, R. W., Kamboj, P., & Hejazi, M. (2024). Key drivers of decarbonizing hard-to-abate energy-system sectors by midcentury. KAPSARC Discussion Paper.\nQiu, Y., Kamboj, P., Hejazi, M., Iyer, G., & Kyle, P. (2024). Reaching Net-Zero GHG Emissions in Saudi Arabia by 2060: Transformation of the Industrial Sector. KAPSARC Discussion Paper.\nKamboj, P., Hejazi, M., BelaÃ, F., Aldubyan, M., Qiu, Y., Kyle, P., & Iyer, G. (2024). Achieving net-zero GHG emissions of Saudi Arabia by 2060: the transformation of the building sector. KAPSARC Discussion Paper.\nKamboj, P., Hejazi, M., Qiu, Y., Kyle, P., & Iyer, G. (2024). Saudi Arabia Net-Zero GHG Emissions by 2060: Transformation of the Transport Sector. KAPSARC Discussion Paper.\nKamboj, P., Hejazi, M., Alhadhrami, K., Qiu, Y., Kyle, P., & Iyer, G. (2023). Saudi Arabia net zero GHG emissions by 2060: Transformation of the electricity sector. KAPSARC Discussion Paper.\nBelaid, F., Hejazi, M., Kamboj, P., & Yilmaz, F. (2023). Implications of climate policy on energy poverty. KAPSARC Discussion Paper.\nKamboj, P., Malyan, A., Kaur, H., Jain, H., & Chaturvedi, V. (2022). India transport energy outlook. Council on Energy, Environment and Water Report.\nKamboj, P., Roychoudhury, J., Saxena, S., & Sehgal, A. P. (2021). Availing existing frameworks to enable a clean and sustainable transition in the transport sector. T20 Italy Policy Brief.\nKamboj, P., & Tongia, R. (2018). Indian Railways and coal: An unsustainable interdependency. Brookings India Report."
+  },
+  {
+    "objectID": "research.html#book-and-book-chapter",
+    "href": "research.html#book-and-book-chapter",
+    "title": "Research",
+    "section": "Book and book chapter",
+    "text": "Book and book chapter\nTongia, R., Sehgal, A., & Kamboj, P. (Eds.). (2020). Future of coal in India: Smooth transition or a bumpy road ahead. Brookings India.\nSahai, V., & Kamboj, P. (2020). Coal logistics and supply chain in India: The premier status of railways and coal. In R. Tongia, A. Sehgal, & P. Kamboj (Eds.), Future of coal in India: Smooth transition or a bumpy road ahead. Brookings India."
+  },
+  {
+    "objectID": "research.html#commentary-and-op-eds",
+    "href": "research.html#commentary-and-op-eds",
+    "title": "Research",
+    "section": "Commentary and op-eds",
+    "text": "Commentary and op-eds\nKamboj, P. (2019, February). Coal transport and railways: The hidden economics and implications for the power sector. Infraline Plus.\nKamboj, P. (2018, December). Renewable energy and India’s energy transition: A status check.\nTongia, R., & Kamboj, P. (2018, March). Is future planning of the electricity grid keeping India’s pace of development in mind?"
+  },
+  {
+    "objectID": "posts/cooling_impacts/index.html",
+    "href": "posts/cooling_impacts/index.html",
+    "title": "Staying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future",
+    "section": "",
+    "text": "One of the less-discussed dimensions of Saudi Arabia’s energy transition is that it is simultaneously an adaptation problem. The country faces both a decarbonization trajectory and a temperature trajectory — and the two interact in ways that conventional long-term electricity planning hasn’t fully absorbed. A recent study, Cooling the Kingdom: Long-term impacts of climate change on electricity demand and household expenditure in Saudi Arabia, examines this interaction using the GCAM-KSA integrated assessment model, tracing how rising temperatures and socioeconomic growth will reshape the nation’s energy landscape and household budgets through the end of the century."
+  },
+  {
+    "objectID": "posts/cooling_impacts/index.html#the-rising-demand-for-cooling",
+    "href": "posts/cooling_impacts/index.html#the-rising-demand-for-cooling",
+    "title": "Staying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future",
+    "section": "The rising demand for cooling",
+    "text": "The rising demand for cooling\nThe most striking projections concern Cooling Degree Days (CDD) — a measure of how much cooling is needed to maintain indoor comfort. Under a high-emissions pathway (RCP 7.0, roughly consistent with continued fossil-fuel expansion and limited mitigation), annual CDD in Saudi Arabia are projected to rise by 40% to 80% by 2100. Heating Degree Days (HDD), conversely, fall toward zero, effectively eliminating the need for space heating across most of the country.\nThis shift establishes space cooling as the dominant energy service required for indoor comfort. National cooling demand is expected to increase by up to 80% by 2100 compared to current levels. The drivers change over time: population and income growth drive demand in the early century, but the direct impact of climate change becomes the primary driver after 2060, particularly in high-warming scenarios.\n\n\n\nMetric\nProjected change by 2100 (RCP 7.0)\n\n\n\n\nCooling Degree Days (annual)\n+40% to +80%\n\n\nHeating Degree Days (annual)\nToward zero\n\n\nNational cooling demand\nUp to +80% vs. current\n\n\nBuilding electricity consumption (climate impact alone)\nUp to +20%\n\n\nAnnual household electricity expenditure\n+8% to +33%"
+  },
+  {
+    "objectID": "posts/cooling_impacts/index.html#impact-on-building-electricity-and-households",
+    "href": "posts/cooling_impacts/index.html#impact-on-building-electricity-and-households",
+    "title": "Staying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future",
+    "section": "Impact on building electricity and households",
+    "text": "Impact on building electricity and households\nThe surge in cooling needs translates directly into higher electricity demand. The research suggests that building electricity consumption could increase by as much as 20% due to climate impacts alone — separate from and additional to growth driven by population, income, and electrification of other end uses. This divergence becomes particularly pronounced in the second half of the century as cooling seasons lengthen and intensify.\nFor the average household, this means a tangible impact on discretionary budgets. Projections show that annual electricity expenditures could rise by 8% to 33%, depending on the specific climate and growth trajectory.\nA subtler finding is worth drawing out: under the low-emissions RCP 2.6 pathway — consistent with Saudi Arabia’s net-zero target by 2060 — higher household expenditures are primarily linked to improved living standards and greater service access, not to the cost of coping with heat. In other words, aggressive mitigation reshapes why households spend more on electricity, not just whether they do."
+  },
+  {
+    "objectID": "posts/cooling_impacts/index.html#a-call-for-integrated-planning",
+    "href": "posts/cooling_impacts/index.html#a-call-for-integrated-planning",
+    "title": "Staying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future",
+    "section": "A call for integrated planning",
+    "text": "A call for integrated planning\nThe findings argue that standard long-term planning practices are inadequate for a climate-constrained future. The study advocates for:\n\nIntegrating climate signals directly into long-term electricity planning and peak-load management, rather than treating them as exogenous shocks.\nStrengthening building efficiency standards and promoting adaptive technologies — passive design, district cooling, higher-efficiency HVAC — to reduce the energy burden before it reaches the grid.\nTargeting policy reforms to ensure that the low-carbon transition remains socially inclusive and affordable, given that cooling access has distributional consequences.\n\nAnticipating these cooling needs now — rather than retrofitting responses after they emerge — aligns with Vision 2030’s efficiency objectives and the Kingdom’s net-zero commitments."
+  },
+  {
+    "objectID": "posts/cooling_impacts/index.html#what-this-study-covers-and-what-it-doesnt",
+    "href": "posts/cooling_impacts/index.html#what-this-study-covers-and-what-it-doesnt",
+    "title": "Staying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future",
+    "section": "What this study covers, and what it doesn’t",
+    "text": "What this study covers, and what it doesn’t\nA brief note on scope for readers familiar with integrated assessment modeling: the analysis captures aggregate building electricity demand under temperature change but does not resolve sub-daily peak dynamics, which are increasingly the binding constraint on Saudi grid planning. It also treats the building stock at a relatively aggregated level — disaggregating by building type, vintage, and retrofit potential would sharpen the efficiency policy signal. These are natural next steps for the modeling agenda, not limitations of the current contribution.\n\nThis post summarizes findings from ongoing work at KAPSARC. For the underlying methodology and full modeling assumptions, see the discussion paper."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Puneet Kamboj",
+    "section": "",
+    "text": "I work with governments, industry, and research institutions on decarbonization pathways, clean energy markets, and the policy-to-market translation that sits between them. Currently Research Lead at KAPSARC in Riyadh, working on Saudi Arabia’s net-zero ecosystem, hydrogen, and CCUS."
+  },
+  {
+    "objectID": "index.html#currently",
+    "href": "index.html#currently",
+    "title": "Puneet Kamboj",
+    "section": "Currently",
+    "text": "Currently\nLeading a multi-stakeholder programme at KAPSARC on Saudi Arabia’s net-zero ecosystem, with a focus on hydrogen, CCUS, and renewable deployment pathways. Ongoing work on scenario analysis using GCAM and related integrated assessment frameworks, and on the regulatory and market conditions needed to translate transition targets into investable pipelines. Engaged in COP, T20, and IAMC processes."
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Puneet Kamboj",
+    "section": "Selected work",
+    "text": "Selected work\nSaudi Arabia’s net-zero ecosystem strategy — Multi-stakeholder initiative structuring decarbonization pathways across hydrogen, CCUS, and renewables. (KAPSARC, ongoing)\nCoal transition and power system risk in India — Co-edited volume and modeling work on infrastructure constraints, demand evolution, and transition risks in India’s power sector. (Brookings India / CSEP)\nState-level clean energy pathways in India — Renewable deployment strategies and investment priorities developed with utilities, regulators, and investors. (CEEW)"
+  },
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Occasional writing on energy transition, modeling practice, and the policy–research interface. Shorter and more exploratory than the formal publications — notes on methods, reading, and questions I’m working through.\n\n\n\n\n\n\n\n\n\nStaying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future\n\n\n\nSaudi Arabia\n\nclimate adaptation\n\nbuildings\n\nGCAM\n\nscenarios\n\n\n\nHow rising temperatures and income growth will reshape Saudi electricity demand, household expenditure, and planning priorities through 2100.\n\n\n\n\n\nApr 24, 2026\n\n4 min\n\n\n\n\n\n\nPowering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries\n\n\n\nSaudi Arabia\n\nelectric vehicles\n\ninfrastructure\n\ninvestment\n\n\n\nWhat it takes — in capital, timing, and infrastructure — to electrify Saudi passenger transport by 2060.\n\n\n\n\n\nApr 24, 2026\n\n5 min\n\n\n\n\nNo matching items"
+  }
+]

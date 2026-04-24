@@ -1,0 +1,32 @@
+---
+  title: "A note on scenario convergence"
+date: 2026-04-24
+categories: [modeling, IAM]
+---
+  
+  Exploring how GCAM scenarios diverge under different policy assumptions.
+
+```{r}
+#| label: fig-scenarios
+#| fig-cap: "Emissions pathways under three policy scenarios"
+#| warning: false
+
+library(ggplot2)
+library(dplyr)
+
+# placeholder data — replace with actual GCAM output
+scenarios <- expand.grid(
+  year = 2020:2050,
+  scenario = c("Reference", "NDC", "Net-zero 2060")
+) |>
+  mutate(emissions = case_when(
+    scenario == "Reference" ~ 10 + 0.1 * (year - 2020),
+    scenario == "NDC"       ~ 10 - 0.05 * (year - 2020),
+    scenario == "Net-zero 2060" ~ 10 - 0.25 * (year - 2020)
+  ))
+
+ggplot(scenarios, aes(year, emissions, color = scenario)) +
+  geom_line(linewidth = 1.1) +
+  labs(x = NULL, y = "GtCO₂/yr", color = NULL) +
+  theme_minimal(base_size = 13)
+```

@@ -1,0 +1,17 @@
+{
+  "hash": "e27fb5c0d3e252dee08e1166a4813114",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"A note on scenario convergence\"\ndate: 2026-04-24\ncategories: [modeling, IAM]\n---\n\nExploring how GCAM scenarios diverge under different policy assumptions.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(dplyr)\n\n# placeholder data — replace with actual GCAM output\nscenarios <- expand.grid(\n  year = 2020:2050,\n  scenario = c(\"Reference\", \"NDC\", \"Net-zero 2060\")\n) |>\n  mutate(emissions = case_when(\n    scenario == \"Reference\" ~ 10 + 0.1 * (year - 2020),\n    scenario == \"NDC\"       ~ 10 - 0.05 * (year - 2020),\n    scenario == \"Net-zero 2060\" ~ 10 - 0.25 * (year - 2020)\n  ))\n\nggplot(scenarios, aes(year, emissions, color = scenario)) +\n  geom_line(linewidth = 1.1) +\n  labs(x = NULL, y = \"GtCO₂/yr\", color = NULL) +\n  theme_minimal(base_size = 13)\n```\n\n::: {.cell-output-display}\n![Emissions pathways under three policy scenarios](test_files/figure-html/fig-scenarios-1.png){#fig-scenarios width=672}\n:::\n:::\n\n---\n",
+    "supporting": [
+      "test_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

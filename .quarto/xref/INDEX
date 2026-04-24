@@ -1,0 +1,26 @@
+{
+  "test.qmd": {
+    "test.html": "7d8963ce"
+  },
+  "research.qmd": {
+    "research.html": "0c66bb8d"
+  },
+  "about.qmd": {
+    "about.html": "ba417458"
+  },
+  "writing.qmd": {
+    "writing.html": "9b29cf3a"
+  },
+  "index.qmd": {
+    "index.html": "f576eedb"
+  },
+  "contact.qmd": {
+    "contact.html": "6b3db3ca"
+  },
+  "posts/EV_Charging/saudi_bev_charging_investment.qmd": {
+    "saudi_bev_charging_investment.html": "e0b438d7"
+  },
+  "posts/cooling_impacts/index.qmd": {
+    "index.html": "61a55e93"
+  }
+}

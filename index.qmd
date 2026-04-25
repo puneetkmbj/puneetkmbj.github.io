@@ -1,6 +1,6 @@
 ---
 title: "Puneet Kamboj"
-subtitle: "Energy transition strategy and integrated assessment modeling across Asia and the Middle East"
+subtitle: "Energy transition and Strategy Specialist"
 page-layout: full
 about:
   image: Photo_PK_edited.jpg
@@ -19,15 +19,15 @@ about:
       href: https://github.com/puneetkmbj
 ---
 
-I work with governments, industry, and research institutions on decarbonization pathways, clean energy markets, and the policy-to-market translation that sits between them. Currently Research Lead at KAPSARC in Riyadh, working on Saudi Arabia's net-zero ecosystem, hydrogen, and CCUS.
+Energy transition specialist with 10+ years of experience advising governments, industry, and research institutions on decarbonization strategy, clean energy markets, and ecosystem development across Asia and the Middle East. Proven track record in structuring net-zero pathways, evaluating emerging technologies (hydrogen, CCUS, renewables), and translating policy and market insights into actionable strategic recommendations. Experienced in multi-stakeholder engagement, sector strategy development, and delivering advisory inputs to senior decision-makers.
 
 ## Currently
 
-Leading a multi-stakeholder programme at KAPSARC on Saudi Arabia's net-zero ecosystem, with a focus on hydrogen, CCUS, and renewable deployment pathways. Ongoing work on scenario analysis using GCAM and related integrated assessment frameworks, and on the regulatory and market conditions needed to translate transition targets into investable pipelines. Engaged in COP, T20, and IAMC processes.
+Research Lead, Climate and Sustainability programme at KAPSARC working on Saudi Arabia's net-zero ecosystem, with a focus on renewable deployment pathways, CCUS, hydrogen, and sectoral decarbonization. Ongoing work on scenario analysis using integrated assessment frameworks, and on the regulatory and market conditions needed to translate transition targets into roadmaps.
 
 ## Selected work
 
-**Saudi Arabia's net-zero ecosystem strategy** — Multi-stakeholder initiative structuring decarbonization pathways across hydrogen, CCUS, and renewables. *(KAPSARC, ongoing)*
+**Saudi Arabia's net-zero pathways** — Multi-stakeholder initiative structuring decarbonization pathways across hydrogen, CCUS, and renewables. *(KAPSARC)*
 
 **Coal transition and power system risk in India** — Co-edited volume and modeling work on infrastructure constraints, demand evolution, and transition risks in India's power sector. *(Brookings India / CSEP)*
 

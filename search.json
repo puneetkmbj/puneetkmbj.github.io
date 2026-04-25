@@ -11,14 +11,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I’ve spent the last decade working on energy transition in two of the most consequential places for global decarbonization: India and Saudi Arabia. The questions that occupy me sit between three domains that don’t always talk to each other — quantitative modeling of energy systems, applied policy analysis, and the strategic calculus of how governments and industry actually make decisions about emerging technologies.\nMy current work at KAPSARC focuses on Saudi Arabia’s transition strategy, with particular attention to hydrogen and CCUS ecosystems, the market structures needed to move from announcements to bankable projects, and how petrostate economies navigate decarbonization without conceding on energy security or economic diversification. Earlier work at CEEW and Brookings India was grounded in the equally difficult problem of how a large, coal-dependent, electricity-constrained economy builds a transition that is technically credible, politically viable, and aligned with development priorities.\nMethodologically, I work primarily with integrated assessment frameworks (GCAM and related tools), techno-economic assessment, and scenario analysis. I’m a heavy user of R and am expanding into Python and other systems modeling languages. I care about models that are transparent, reproducible, and honest about what they can and cannot tell us — which is often less than policy conversations assume.\nOutside of formal research, I engage through COP, T20, IAMC, and bilateral dialogue processes, and I mentor junior researchers working on energy and climate policy."
+    "text": "I’ve spent the last decade working on energy transition in two of the most consequential places for global decarbonization: India and Saudi Arabia. The questions that occupy me sit between three domains that don’t always talk to each other — quantitative modeling of energy systems, applied policy analysis, and the strategic calculus of how governments and industry actually make decisions about emerging technologies.\nMy current work at KAPSARC focuses on Saudi Arabia’s transition strategy, with particular attention to hydrogen and CCUS ecosystems, the market structures needed to move from announcements to bankable projects, and how petrostate economies navigate decarbonization without conceding on energy security or economic diversification. Earlier work at CEEW and Brookings India was grounded in the equally difficult problem of how a large, coal-dependent, electricity-constrained economy builds a transition that is technically credible, politically viable, and aligned with development priorities.\nMethodologically, I work primarily with integrated assessment frameworks (GCAM and related tools), techno-economic assessment, and scenario analysis. I care about models that are transparent, reproducible, and honest about what they can and cannot tell us — which is often less than policy conversations assume."
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About",
     "section": "",
-    "text": "I’ve spent the last decade working on energy transition in two of the most consequential places for global decarbonization: India and Saudi Arabia. The questions that occupy me sit between three domains that don’t always talk to each other — quantitative modeling of energy systems, applied policy analysis, and the strategic calculus of how governments and industry actually make decisions about emerging technologies.\nMy current work at KAPSARC focuses on Saudi Arabia’s transition strategy, with particular attention to hydrogen and CCUS ecosystems, the market structures needed to move from announcements to bankable projects, and how petrostate economies navigate decarbonization without conceding on energy security or economic diversification. Earlier work at CEEW and Brookings India was grounded in the equally difficult problem of how a large, coal-dependent, electricity-constrained economy builds a transition that is technically credible, politically viable, and aligned with development priorities.\nMethodologically, I work primarily with integrated assessment frameworks (GCAM and related tools), techno-economic assessment, and scenario analysis. I’m a heavy user of R and am expanding into Python and other systems modeling languages. I care about models that are transparent, reproducible, and honest about what they can and cannot tell us — which is often less than policy conversations assume.\nOutside of formal research, I engage through COP, T20, IAMC, and bilateral dialogue processes, and I mentor junior researchers working on energy and climate policy."
+    "text": "I’ve spent the last decade working on energy transition in two of the most consequential places for global decarbonization: India and Saudi Arabia. The questions that occupy me sit between three domains that don’t always talk to each other — quantitative modeling of energy systems, applied policy analysis, and the strategic calculus of how governments and industry actually make decisions about emerging technologies.\nMy current work at KAPSARC focuses on Saudi Arabia’s transition strategy, with particular attention to hydrogen and CCUS ecosystems, the market structures needed to move from announcements to bankable projects, and how petrostate economies navigate decarbonization without conceding on energy security or economic diversification. Earlier work at CEEW and Brookings India was grounded in the equally difficult problem of how a large, coal-dependent, electricity-constrained economy builds a transition that is technically credible, politically viable, and aligned with development priorities.\nMethodologically, I work primarily with integrated assessment frameworks (GCAM and related tools), techno-economic assessment, and scenario analysis. I care about models that are transparent, reproducible, and honest about what they can and cannot tell us — which is often less than policy conversations assume."
   },
   {
     "objectID": "about.html#current-position",
@@ -102,28 +102,21 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "I’m open to conversations about research collaboration, advisory engagements on energy transition strategy, speaking invitations, and media inquiries on hydrogen, CCUS, integrated assessment modeling, and transition policy in India and the GCC.\nFor the fastest response, email is best. I aim to reply within a week, though travel and convening cycles occasionally slow that down."
+    "text": "I’m open to conversations about research collaboration, advisory engagements on energy transition strategy, speaking invitations, and transition policy in India and the GCC.\nEmail: puneetkamboj@pm.me"
   },
   {
     "objectID": "contact.html#get-in-touch",
     "href": "contact.html#get-in-touch",
     "title": "Contact",
     "section": "Get in touch",
-    "text": "Get in touch\nEmail — puneetkamboj@pm.me\nBased in — Riyadh, Saudi Arabia"
-  },
-  {
-    "objectID": "contact.html#elsewhere",
-    "href": "contact.html#elsewhere",
-    "title": "Contact",
-    "section": "Elsewhere",
-    "text": "Elsewhere\n\nLinkedIn\nGoogle Scholar (add your profile link)\nORCID (add your ORCID link)\nGitHub (add your GitHub link once set up)"
+    "text": "Get in touch\n\nLinkedIn\nGoogle Scholar\nORCID\nGitHub"
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "My research examines the strategic, technical, and market dimensions of energy transition in emerging and oil-producing economies. Three themes organize most of the work: (i) decarbonization pathways and scenario analysis, typically using integrated assessment models; (ii) the ecosystem conditions — policy, regulation, market design — needed for emerging clean energy technologies such as hydrogen and CCUS to move from strategy to deployment; and (iii) the political economy of transition in coal-dependent and hydrocarbon-exporting contexts.\nWhere available, links point to the journal version, a preprint, or the report page."
+    "text": "My research examines the strategic, technical, and market dimensions of energy transition in emerging and oil-producing economies. Three themes organize most of the work: (i) decarbonization pathways and scenario analysis, typically using integrated assessment models; (ii) the ecosystem conditions — policy, regulation, market design — needed for emerging clean energy technologies such as hydrogen and CCUS to move from strategy to deployment; and (iii) the political economy of transition in coal-dependent and hydrocarbon-exporting contexts."
   },
   {
     "objectID": "research.html#peer-reviewed-journal-articles",
@@ -193,26 +186,26 @@
     "href": "index.html",
     "title": "Puneet Kamboj",
     "section": "",
-    "text": "I work with governments, industry, and research institutions on decarbonization pathways, clean energy markets, and the policy-to-market translation that sits between them. Currently Research Lead at KAPSARC in Riyadh, working on Saudi Arabia’s net-zero ecosystem, hydrogen, and CCUS."
+    "text": "Energy transition specialist with 10+ years of experience advising governments, industry, and research institutions on decarbonization strategy, clean energy markets, and ecosystem development across Asia and the Middle East. Proven track record in structuring net-zero pathways, evaluating emerging technologies (hydrogen, CCUS, renewables), and translating policy and market insights into actionable strategic recommendations. Experienced in multi-stakeholder engagement, sector strategy development, and delivering advisory inputs to senior decision-makers."
   },
   {
     "objectID": "index.html#currently",
     "href": "index.html#currently",
     "title": "Puneet Kamboj",
     "section": "Currently",
-    "text": "Currently\nLeading a multi-stakeholder programme at KAPSARC on Saudi Arabia’s net-zero ecosystem, with a focus on hydrogen, CCUS, and renewable deployment pathways. Ongoing work on scenario analysis using GCAM and related integrated assessment frameworks, and on the regulatory and market conditions needed to translate transition targets into investable pipelines. Engaged in COP, T20, and IAMC processes."
+    "text": "Currently\nResearch Lead, Climate and Sustainability programme at KAPSARC working on Saudi Arabia’s net-zero ecosystem, with a focus on renewable deployment pathways, CCUS, hydrogen, and sectoral decarbonization. Ongoing work on scenario analysis using integrated assessment frameworks, and on the regulatory and market conditions needed to translate transition targets into roadmaps."
   },
   {
     "objectID": "index.html#selected-work",
     "href": "index.html#selected-work",
     "title": "Puneet Kamboj",
     "section": "Selected work",
-    "text": "Selected work\nSaudi Arabia’s net-zero ecosystem strategy — Multi-stakeholder initiative structuring decarbonization pathways across hydrogen, CCUS, and renewables. (KAPSARC, ongoing)\nCoal transition and power system risk in India — Co-edited volume and modeling work on infrastructure constraints, demand evolution, and transition risks in India’s power sector. (Brookings India / CSEP)\nState-level clean energy pathways in India — Renewable deployment strategies and investment priorities developed with utilities, regulators, and investors. (CEEW)"
+    "text": "Selected work\nSaudi Arabia’s net-zero pathways — Multi-stakeholder initiative structuring decarbonization pathways across hydrogen, CCUS, and renewables. (KAPSARC)\nCoal transition and power system risk in India — Co-edited volume and modeling work on infrastructure constraints, demand evolution, and transition risks in India’s power sector. (Brookings India / CSEP)\nState-level clean energy pathways in India — Renewable deployment strategies and investment priorities developed with utilities, regulators, and investors. (CEEW)"
   },
   {
     "objectID": "writing.html",
     "href": "writing.html",
-    "title": "Writing",
+    "title": "Summary Blogs",
     "section": "",
     "text": "Occasional writing on energy transition, modeling practice, and the policy–research interface. Shorter and more exploratory than the formal publications — notes on methods, reading, and questions I’m working through.\n\n\n\n\n\n\n\n\n\nStaying cool in a warming Kingdom: Saudi Arabia’s cooling-driven energy future\n\n\n\nSaudi Arabia\n\nclimate adaptation\n\nbuildings\n\nGCAM\n\nscenarios\n\n\n\nHow rising temperatures and income growth will reshape Saudi electricity demand, household expenditure, and planning priorities through 2100.\n\n\n\n\n\nApr 24, 2026\n\n4 min\n\n\n\n\n\n\nPowering Saudi Arabia’s EV future: the multi-billion investment roadmap for charging and batteries\n\n\n\nSaudi Arabia\n\nelectric vehicles\n\ninfrastructure\n\ninvestment\n\n\n\nWhat it takes — in capital, timing, and infrastructure — to electrify Saudi passenger transport by 2060.\n\n\n\n\n\nApr 24, 2026\n\n5 min\n\n\n\n\nNo matching items"
   }

@@ -6,6 +6,8 @@ My research examines the strategic, technical, and market dimensions of energy t
 
 ## Peer-reviewed journal articles
 
+**Kamboj, P.**, Qiu, Y., Graham, N., Kyle, P., Apeaning, R., Iyer, G., & Hejazi, M. (2026). [GCAM‑KSA: A country‑specific integrated assessment model for long‑term energy, water, land, and climate analysis of Saudi Arabia.](https://doi.org/10.2139/ssrn.6644479). *SSRN Working Paper*, 6644479.
+
 **Kamboj, P.**, Bhatt, Y., Xu, X., Alswaina, F., Shetty, P. K., Arora, A., & Hejazi, M. (2026). [Pathways to Decarbonizing Land Transport in Saudi Arabia: an integrated assessment of technologies and policy interventions](https://doi.org/10.1016/j.egycc.2026.100245). *Energy and Climate Change*, 100245.
 
 Ilyas, A., **Kamboj, P.**, Alswaina, F., Shetty, P. K., Hejazi, M., & Wada, Y. [Long-term impacts of climate change on electricity demand and household expenditure in Saudi Arabia](https://dx.doi.org/10.2139/ssrn.6328188). *SSRN Working Paper*, 6328188.
